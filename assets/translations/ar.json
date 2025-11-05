@@ -1,0 +1,15 @@
+{
+  "Authentication": {
+    "No results": "بحث",
+    "travel": "سفر",
+    "tecnology": "تقنية",
+    "entertainment": "ترفيه",
+    "cancel": "إلغاء",
+    "business": "أعمال",
+    "search_Result": "نتائج البحث",
+    "search": "بحث",
+    "something wrong": "حدث خطأ ما",
+    "try_again": "من فضلك حاول مرة أخرى",
+    "explore": "استكشف"
+  }
+}
