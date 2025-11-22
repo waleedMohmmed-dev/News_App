@@ -1,0 +1,15 @@
+{
+  "Authentication": {
+    "Travel": "Travel",
+    "Technology": "Technology",
+    "Entertainment": "Entertainment",
+    "Cancel": "Cancel",
+    "Business": "Business",
+    "SearchResult": "Search Result",
+    "Search": "Search",
+    "No results": "No results",
+    "Something wrong": "Something wrong",
+    "Try_again": "Try again",
+    "explore": "Explore"
+  }
+}
