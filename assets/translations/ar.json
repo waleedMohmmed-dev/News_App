@@ -1,15 +1,9 @@
 {
-  "Authentication": {
-    "No results": "بحث",
-    "travel": "سفر",
-    "tecnology": "تقنية",
-    "entertainment": "ترفيه",
-    "cancel": "إلغاء",
-    "business": "أعمال",
-    "search_Result": "نتائج البحث",
-    "search": "بحث",
-    "something wrong": "حدث خطأ ما",
-    "try_again": "من فضلك حاول مرة أخرى",
-    "explore": "استكشف"
-  }
+  "explore": "استكشف",
+  "entertainment": "الترفيه",
+  "technology": "التكنولوجيا",
+  "business": "الأعمال",
+  "travel": "السفر",
+  "something_went_wrong": "حدث خطأ ما",
+  "no_articles_found": "لم يتم العثور على مقالات"
 }

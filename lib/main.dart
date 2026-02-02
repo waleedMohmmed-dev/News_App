@@ -1,43 +1,47 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:news_app_practice/core/constants/networking/app_constants.dart';
-import 'package:news_app_practice/core/constants/networking/dio_helper.dart';
-
-import 'package:news_app_practice/core/futures/routing/router_generation_config.dart';
+import 'package:news_app_practice/core/networking/dio_helper.dart';
+import 'package:news_app_practice/core/routing/router_generation_config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await EasyLocalization.ensureInitialized();
-  // ?init dio
-  DioHelper.intiDio();
+
+  DioHelper.initDio();
+
   runApp(
     EasyLocalization(
-      startLocale: Locale(AppConstants.lang),
-      supportedLocales: [Locale('en'), Locale('ar')],
-      path: 'assets/translations', // Path to translation files
-      fallbackLocale: Locale('en'),
+      supportedLocales: const [Locale('en'), Locale("ar")],
+      path: 'assets/translations', // <-- change the path of the translation files
+      fallbackLocale: const Locale('ar'),
+      // startLocale: const Locale('ar'),
       child: const MyApp(),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // ! important to use ScreenUtilInit
-    return MaterialApp.router(
-      routerConfig: RouterGenerationConfig.goRouter,
-      debugShowCheckedModeBanner: false,
-      localizationsDelegates: context.localizationDelegates,
-      supportedLocales: context.supportedLocales,
-      locale: context.locale,
-      title: 'Flutter Demo',
+    return ScreenUtilInit(
+      designSize: const Size(430, 932),
+      minTextAdapt: true,
+      splitScreenMode: false,
+      builder: (context, child) {
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: 'News App',
+          localizationsDelegates: context.localizationDelegates,
+          supportedLocales: context.supportedLocales,
+          locale: context.locale,
+          routerConfig: RouterGenerationConfig.goRouter,
+        );
+      },
     );
   }
-
-  // test update 1
 }

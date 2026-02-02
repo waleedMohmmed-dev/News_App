@@ -1,15 +1,10 @@
+
 {
-  "Authentication": {
-    "Travel": "Travel",
-    "Technology": "Technology",
-    "Entertainment": "Entertainment",
-    "Cancel": "Cancel",
-    "Business": "Business",
-    "SearchResult": "Search Result",
-    "Search": "Search",
-    "No results": "No results",
-    "Something wrong": "Something wrong",
-    "Try_again": "Try again",
-    "explore": "Explore"
-  }
+  "explore": "Explore",
+  "entertainment": "Entertainment",
+  "technology": "Technology", 
+  "business": "Business",
+  "travel": "Travel",
+  "something_went_wrong": "Something went wrong",
+  "no_articles_found": "No articles found"
 }
