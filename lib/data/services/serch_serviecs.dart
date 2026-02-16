@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:news_app_practice/core/constants/constants.dart';
 import 'package:news_app_practice/core/networking/api_endpoints.dart';
 import 'package:news_app_practice/core/networking/dio_helper.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
 
 class SerchResultServices {
   serchItemByName(String query) async {

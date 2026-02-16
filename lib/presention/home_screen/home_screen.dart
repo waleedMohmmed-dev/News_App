@@ -6,15 +6,16 @@ import 'package:go_router/go_router.dart';
 import 'package:news_app_practice/core/routing/app_routes.dart';
 import 'package:news_app_practice/core/styles/app_text_styles.dart';
 import 'package:news_app_practice/core/widgets/spacing_widgets.dart';
-import 'package:news_app_practice/features/home_screen/cubit/cubit/home_cubit.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
-import 'package:news_app_practice/features/home_screen/repo/home_repo.dart';
-import 'package:news_app_practice/features/home_screen/widgets/article_card_widget.dart';
-import 'package:news_app_practice/features/home_screen/widgets/custom_category_item_widget.dart';
-import 'package:news_app_practice/features/home_screen/widgets/top_headline_item_widget.dart';
-import 'package:news_app_practice/features/screens/articals_details/articals_details_screen.dart';
-import 'package:news_app_practice/features/screens/serch_result_screen/search_screen.dart';
-import 'package:news_app_practice/features/screens/serch_result_screen/widget/serch_text_fiald_widget.dart';
+import 'package:news_app_practice/busness_logic/cubit/cubit/home_cubit.dart';
+
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
+import 'package:news_app_practice/data/repo/home_repo.dart';
+import 'package:news_app_practice/presention/home_screen/widgets/article_card_widget.dart';
+import 'package:news_app_practice/presention/home_screen/widgets/custom_category_item_widget.dart';
+import 'package:news_app_practice/presention/home_screen/widgets/top_headline_item_widget.dart';
+import 'package:news_app_practice/presention/screens/articals_details/articals_details_screen.dart';
+import 'package:news_app_practice/presention/screens/serch_result_screen/search_screen.dart';
+import 'package:news_app_practice/presention/screens/serch_result_screen/widget/serch_text_fiald_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,7 +27,6 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     context.read<HomeCubit>().fetchTopHeadlines();
 
     super.initState();
@@ -152,7 +152,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               );
                             },
-
                             child: ArticleCardWidget(
                               title: article.title ?? '',
                               authorName: article.author ?? 'Unknown Author',

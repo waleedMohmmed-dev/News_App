@@ -4,11 +4,11 @@ import 'package:go_router/go_router.dart';
 import 'package:news_app_practice/core/constants/constants.dart';
 import 'package:news_app_practice/core/styling/app_styles.dart';
 import 'package:news_app_practice/core/widgets/spacing_widgets.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
-import 'package:news_app_practice/features/home_screen/widgets/article_card_widget.dart';
-import 'package:news_app_practice/features/screens/serch_result_screen/widget/serch_text_fiald_widget.dart';
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
+import 'package:news_app_practice/presention/home_screen/widgets/article_card_widget.dart';
+import 'package:news_app_practice/presention/screens/serch_result_screen/widget/serch_text_fiald_widget.dart';
 
-import 'services/serch_serviecs.dart';
+import '../../../data/services/serch_serviecs.dart';
 
 class SearchScreen extends StatelessWidget {
   final String? query;

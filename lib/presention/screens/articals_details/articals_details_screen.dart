@@ -3,7 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:news_app_practice/core/styling/app_styles.dart';
 import 'package:news_app_practice/core/widgets/spacing_widgets.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
 
 class ArticalsScreen extends StatelessWidget {
   final String? title;

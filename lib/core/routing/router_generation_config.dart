@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:news_app_practice/core/routing/app_routes.dart';
-import 'package:news_app_practice/features/home_screen/cubit/cubit/home_cubit.dart';
-import 'package:news_app_practice/features/home_screen/home_screen.dart';
-import 'package:news_app_practice/features/screens/articals_details/articals_details_screen.dart';
-import 'package:news_app_practice/features/screens/serch_result_screen/search_screen.dart';
+import 'package:news_app_practice/busness_logic/cubit/cubit/home_cubit.dart';
+
+import 'package:news_app_practice/presention/home_screen/home_screen.dart';
+import 'package:news_app_practice/presention/screens/articals_details/articals_details_screen.dart';
+import 'package:news_app_practice/presention/screens/serch_result_screen/search_screen.dart';
 
 class RouterGenerationConfig {
   static GoRouter goRouter = GoRouter(

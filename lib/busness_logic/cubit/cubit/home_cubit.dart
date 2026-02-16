@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
-import 'package:news_app_practice/features/home_screen/repo/home_repo.dart';
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
+import 'package:news_app_practice/data/repo/home_repo.dart';
 
 part 'home_state.dart';
 

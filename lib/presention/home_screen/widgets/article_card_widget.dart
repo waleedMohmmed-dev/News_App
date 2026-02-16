@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:news_app_practice/core/routing/app_routes.dart';
 import 'package:news_app_practice/core/styles/app_text_styles.dart';
 import 'package:news_app_practice/core/widgets/spacing_widgets.dart';
-import 'package:news_app_practice/features/home_screen/models/top_headlines_model.dart';
-import 'package:news_app_practice/features/screens/articals_details/articals_details_screen.dart';
+import 'package:news_app_practice/data/models/top_headlines_model.dart';
+import 'package:news_app_practice/presention/screens/articals_details/articals_details_screen.dart';
 
 class ArticleCardWidget extends StatelessWidget {
   final String title;
